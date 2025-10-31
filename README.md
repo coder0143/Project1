@@ -126,7 +126,7 @@ ollama pull llama3.2:3b
 # or any other model you prefer
 ```
 
-**Note**: Update the model name in `app_new.py` if you use a different model:
+**Note**: Update the model name in `app.py` if you use a different model:
 ```python
 md = "gemma2:2b"  # Change this to your preferred model
 ```
@@ -167,7 +167,7 @@ print("Training completed! Check the dashboard for results.")
 ### 2. Launch the Dashboard
 
 ```bash
-streamlit run app_new.py
+streamlit run app.py
 ```
 
 The dashboard will open in your browser at `http://localhost:8501`
@@ -322,7 +322,7 @@ The dashboard integrates with Ollama to provide AI-powered analysis:
    ```
 
 3. **Configure Model in Dashboard**:
-   Edit `app_new.py`:
+   Edit `app.py`:
    ```python
    md = "gemma2:2b"  # Change to your preferred model
    ```
