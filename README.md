@@ -18,6 +18,7 @@ A Deep Reinforcement Learning framework that automatically discovers optimal neu
 - **Interactive Dashboard**: Beautiful Streamlit dashboard for visualization and analysis
 - **AI-Powered Insights**: Integration with Ollama for intelligent model recommendations
 - **Export & Sharing**: Export results, best architectures, and generated PyTorch code
+- **Automatic GPU Dectection**: If using cuda enabled gpu, the code auto detects the gpu and uses it
 
 ## 📋 Table of Contents
 
@@ -49,10 +50,10 @@ A Deep Reinforcement Learning framework that automatically discovers optimal neu
 │  ┌──────────────────────────────────────────────────────┐   │
 │  │              Experience Replay Buffer                │   │
 │  └──────────────────────────────────────────────────────┘   │
-│         │                                           │       │
-│         ▼                                           ▼       │
-│  ┌──────────────┐                          ┌──────────────┐ │
-│  │  TorchTrack  │                          │   Reward     │ │
+│         │                             ▲             │       │
+│         ▼                             |             ▼       │
+│  ┌──────────────┐                     |    ┌──────────────┐ │
+│  │  TorchTrack  │                     |____│   Reward     │ │
 │  │  (Tracking)  │                          │ Calculator   │ │
 │  └──────────────┘                          └──────────────┘ │
 │         │                                                   │
