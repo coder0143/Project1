@@ -89,4 +89,4 @@ X_test = torch.FloatTensor(X_test)
 y_test = torch.FloatTensor(y_test)
 
 dqnn_complex = DQNN(X_train, y_train, X_test, y_test, task_type='classification')
-episode_rewards_complex = dqnn_complex.train(episodes=100, max_steps_per_episode=5)
+episode_rewards_complex = dqnn_complex.train(episodes=30, max_steps_per_episode=5)
